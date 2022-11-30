@@ -1,0 +1,37 @@
+# 分流规则配置片段包含若干条分流规则；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+ 
+ 
+ 
+;host, www.example.com, direct
+
+ - DOMAIN-SUFFIX,netflix.com,NETFLIX
+ - DOMAIN-SUFFIX,netflix.net,NETFLIX
+ - DOMAIN-SUFFIX,nflxext.com,NETFLIX
+ - DOMAIN-SUFFIX,nflximg.com,NETFLIX
+ - DOMAIN-SUFFIX,nflximg.net,NETFLIX
+ - DOMAIN-SUFFIX,nflxso.net,NETFLIX
+ - DOMAIN-SUFFIX,nflxvideo.net,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest0.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest1.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest2.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest3.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest4.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest5.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest6.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest7.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest8.com,NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest9.com,NETFLIX
+ - IP-CIDR,23.246.0.0/18,NETFLIX,no-resolve
+ - IP-CIDR,37.77.184.0/21,NETFLIX,no-resolve
+ - IP-CIDR,45.57.0.0/17,NETFLIX,no-resolve
+ - IP-CIDR,64.120.128.0/17,NETFLIX,no-resolve
+ - IP-CIDR,66.197.128.0/17,NETFLIX,no-resolve
+ - IP-CIDR,108.175.32.0/20,NETFLIX,no-resolve
+ - IP-CIDR,192.173.64.0/18,NETFLIX,no-resolve
+ - IP-CIDR,198.38.96.0/19,NETFLIX,no-resolve
+ - IP-CIDR,198.45.48.0/20,NETFLIX,no-resolve
+ - IP-CIDR,34.210.42.111/32,NETFLIX,no-resolve
+ - IP-CIDR,52.89.124.203/32,NETFLIX,no-resolve
+ - IP-CIDR,54.148.37.5/32,NETFLIX,no-resolve
