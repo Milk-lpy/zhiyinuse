@@ -59,5 +59,5 @@ const options = {
     healthCardInfo: 0,
     healthStatus: 0,
     travelInfo: 0,
-    locateDetailedAddress: '山东省烟台市栖霞市庄园街道卧龙村民安置房',
+    locateDetailedAddress: '山东省烟台市栖霞市庄园街道卧龙村民安置房'}
     locateLatitude
