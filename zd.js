@@ -13,7 +13,13 @@ const headers = {
 	"referer": "https://servicewechat.com/wx949a64a04ad423d3/32/page-frame.html",
 	"xweb_xhr": "1",
 	"Content-Length": "979",
-	"user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6364"
+	"user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6364",
+	"Accept": "*/*",
+	"Sec-Fetch-Site": "cross-site",
+	"Sec-Fetch-Mode": "cors",
+	"Sec-Fetch-Dest": "empty",
+	"Accept-Language": "zh-CN,zh",
+	"Accept-Encoding": "gzip, deflate"
 };
 const data = {
 	"isTravel": 0,
@@ -73,13 +79,13 @@ const myRequest = {
     url: url,
     method: method, // Optional, default GET.
     headers: headers, // Optional.
-    body: JSON.stringify(data) // Optional.
+    body: data // Optional.
 };
 
 $task.fetch(myRequest).then(response => {
 	response.body
     console.log(response.body);
-    $notify("500", "今日已打卡", response.body); // Success!
+    $notify("Title", "Subtitle", response.body); // Success!
     $done();
 }, reason => {
     // reason.error
