@@ -79,7 +79,7 @@ const myRequest = {
     url: url,
     method: method, // Optional, default GET.
     headers: headers, // Optional.
-    body: data // Optional.
+    body: JSON.stringify(data) // Optional.
 };
 
 $task.fetch(myRequest).then(response => {
