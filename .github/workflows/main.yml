@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use aaa青云版.js
-    - run: 
+    - run: 乐园.sh
