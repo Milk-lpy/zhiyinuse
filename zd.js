@@ -80,7 +80,7 @@ const myRequest = {
     url: url,
     method: method, // Optional, default GET.
     headers: headers, // Optional.
-    body: JSON.isPrototypeOf(data) // Optional.
+    body: data // Optional.
 };
 
 $task.fetch(myRequest).then(response => {
