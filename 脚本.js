@@ -18,13 +18,13 @@ const data = {"isTravel":"0","isContact":"0","isCohabit":"0","isFatigue":"0","is
 
 const myRequest = {
     url: url,
-    method: method, // Optional, default GET.
+    method: post, // Optional, default GET.
     headers: headers, // Optional.
     body: JSON.stringify(data) // Optional.
 };
 
 $task.fetch(myRequest).then(response => {
-    // response.statusCode, response.headers, response.body
+   response.body
     console.log(response.body);
     $notify("Title", "Subtitle", response.body); // Success!
     $done();
