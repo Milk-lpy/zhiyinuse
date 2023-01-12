@@ -1,5 +1,5 @@
 # > Google Voice
-DOMAIN,lens.l.google.com
+DOMAIN,lens.l.google.com, Google voice
 
 host, peoplestack-pa.googleapis.com, Google voice
 host, www.googleapis.com, Google voice
