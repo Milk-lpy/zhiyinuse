@@ -1,0 +1,8 @@
+# > Google Voice
+DOMAIN,lens.l.google.com
+
+host, peoplestack-pa.googleapis.com, Google voice
+host, www.googleapis.com, Google voice
+host, oauth2.googleapis.com, Google voice
+host, oauthaccountmanager.googleapis.com, Google voice
+host, growth-pa.googleapis.com, Google voice
